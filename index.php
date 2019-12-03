@@ -1,6 +1,6 @@
-<!-- Déclaration de la variable answer -->
 <?php
-$answer='Non';
+// Déclaration de la variable answer
+$answer='oui';
  ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -9,18 +9,16 @@ $answer='Non';
     <title>PHP1Ex5</title>
   </head>
   <body>
-    <!-- Déclaration d'un paragraphe -->
-    <p><?php
+    <?php
     // Déclaration de l'instruction if. Si la réponse est oui alors on affiche le message suivant(vous avez...)
-    if ($answer=='Oui')
-    {
-      echo'Vous avez répondu oui';
-    }
-    // Sinon si la réponse est non alors on affiche le message suivant (vous avez...)
-    elseif ($answer=='Non')
-    {
-      echo'Vous avez répondu non';
-    }
-    ?></p>
+    if ($answer=='Oui'){
+      ?>
+      <p>Vous avez répondu oui</p>
+      <?php
+    // Sinon la réponse est non alors on affiche le message suivant (vous avez...)
+    }else{
+      ?>
+      <p>Vous avez répondu non</p>
+    <?php } ?>
     </body>
 </html>
